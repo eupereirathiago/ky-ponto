@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #FFF7E8;
+  --card: #FFFFFF;
+  --ink: #2B0F0F;
+  --mut: #7A655C;
+  --or: #FFA600;
+  --ok: #3E9B5F;
+  --out: #D8483B;
+  --font-heading: 'Baloo 2', system-ui, sans-serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background-color: var(--bg);
+  min-height: 100vh;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Print styles for Comprovante de Ponto and Espelho de Ponto */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

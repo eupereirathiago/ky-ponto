@@ -1,0 +1,6 @@
+{
+  "name": "KyDelicia Ponto - KyPonto",
+  "description": "Sistema de Ponto Digital (REP-P e PTRP) da KyDelicia com terminal quiosque, captura de evidências, comprovante eletrônico e painel administrativo.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
